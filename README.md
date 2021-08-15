@@ -33,6 +33,7 @@ A loading indicator is added to inform users with slow connections while fetchin
 ## Improvement Points
 
 * Handle Internationalization and support many languages
+* Adjust the CSS class names according to naming convention
 * Add color palette to change UI colors and make it dynamic
 * Add more font families and make it optional to change
 * Add gradient color for story score to emphasize ascending order
