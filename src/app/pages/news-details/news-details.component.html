@@ -1,0 +1,36 @@
+<div class="news-details-container">
+  <cm-tabbar></cm-tabbar>
+
+  <div class="article-container">
+    <div class="news-image" [ngStyle]="{'background-image': 'url(' + selectedNews.storyImageURL + ')'}">
+      <button class="back-button" (click)="goBack()"> <span class="arrow-back"></span> Back </button>
+    </div>
+    <div class="news-details">
+      <div class="news-title">
+        {{selectedNews.storyTitle}}
+      </div>
+      <div class="news-time-author">
+        by {{selectedNews.authorId}} at {{selectedNews.storyTimestamp}}
+      </div>
+      <div class="intro-text">
+        {{introText}}
+      </div>
+      <div class="about-author">
+        <div *ngIf="selectedNews.authorAbout">
+          <div class="title">About the author of this article:</div> <br>
+          <div class="info">{{selectedNews.authorAbout}}</div>
+        </div>
+        <div *ngIf="!selectedNews.authorAbout">
+          <div class="title">This author has no information registered.</div>
+        </div>
+      </div>
+      <div class="redirect">
+        If you want to read the actual article please visit
+        <a [href]="selectedNews.storyURL" target="_blank"> the related website </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+

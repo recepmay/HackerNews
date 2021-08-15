@@ -1,0 +1,39 @@
+@import './src/app/styles/variables.scss';
+
+.news-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .items-container {
+    display: flex;
+    height: calc(100% - 50px);
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+    @media (max-width: $breakpoint) {
+      display: grid;
+    }
+
+    .single-item {
+      height: 60%;
+      margin: 1rem .75rem .5rem .75rem;
+      flex-grow: 1;
+      width: 25%;
+      min-width: 120px;
+      cursor: default;
+
+      @media (max-width: $breakpoint) {
+        width: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+@mixin loadingIcon {
+  box-sizing: border-box;
+  border: 6px solid transparent;
+  border-top: 6px solid $spinnerColor;
+  border-bottom: 6px solid $spinnerColor;
+  border-left: 6px solid $spinnerColor;
+  animation: spinny 1.2s ease-in-out infinite;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@mixin ssLoading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .ss-loading__icon {
+    width: 3rem;
+    height: 3rem;
+    @include loadingIcon;
+    margin: 0 auto 1.25rem;
+    margin-top: -1rem;
+  }
+  .ss-loading__text {
+    position: absolute;
+    margin-top: 3rem;
+    color: $spinnerColor
+  }
+}
+
+.ss-loading { @include ssLoading }
+
+@keyframes spinny {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

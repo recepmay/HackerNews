@@ -1,0 +1,14 @@
+<div class="news-container">
+  <cm-tabbar></cm-tabbar>
+
+  <div class="items-container" *ngIf="(news | async).length > 0">
+    <div class="single-item" *ngFor="let singleNews of (news | async); let index = index">
+      <cm-card [singleNews]="singleNews"></cm-card>
+    </div>
+  </div>
+
+  <cm-loader *ngIf="(news | async).length === 0"></cm-loader>
+
+</div>
+
+

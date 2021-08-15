@@ -1,0 +1,114 @@
+@import './src/app/styles/variables';
+
+.news-details-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .article-container {
+    display: flex;
+    height: calc(100% - 50px);
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    @media (max-width: $breakpoint) {
+      display: grid;
+    }
+
+    .news-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-grow: 1;
+      margin-top: 1rem;
+      border-radius: 8px 0 0 8px;
+      max-width: 50%;
+
+      @media (max-width: $breakpoint) {
+        max-width: unset;
+        min-height: 130px;
+        border-radius: 8px;
+      }
+
+      .back-button {
+        position: absolute;
+        border: 0.1em solid $tabBarColor;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 600;
+        text-align: center;
+        background-color: $tabBarColor;
+        padding: 0.5rem 1rem 0.5rem 14px;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        border-radius: .5rem;
+        cursor: pointer;
+
+        .arrow-back {
+          content: url('../../../../src/assets/images/arrow-left.svg');
+        }
+      }
+    }
+    .news-details {
+      background-color: $articleBackgroundColor;
+      flex-grow: 1;
+      margin-top: 1rem;
+      border-radius: 0 8px 8px 0;
+      max-width: 50%;
+      display: flex;
+      flex-flow: column;
+
+      @media (max-width: $breakpoint) {
+        max-width: unset;
+        border-radius: 8px;
+      }
+
+      .news-title {
+        padding: 2rem 2rem 1rem 2rem;
+        text-align: center;
+        font-size: 18px;
+      }
+      .news-time-author {
+        text-align: center;
+        font-size: 12px;
+      }
+      .intro-text {
+        padding: 2rem 2rem 0 2rem;;
+        font-family: $secondaryFont;
+        font-size: 12px;
+        line-height: 120%;
+      }
+      .about-author {
+        padding: 2rem;
+        word-break : break-all;
+        font-family: $secondaryFont;
+        font-size: 14px;
+        line-height: 120%;
+
+        .title {
+          font-size: 14px;
+          font-style: oblique;
+          font-weight: 700;
+        }
+        .info {
+          margin-top: .5rem;
+          font-size: 12px;
+        }
+      }
+      .redirect {
+        padding: 2rem;
+        bottom: 0;
+        font-family: $secondaryFont;
+        font-size: 12px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+@mixin pageLayout {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(0,18,25);
+  background: linear-gradient(360deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+  font-family: $primaryFont;
+}
+
+@mixin pageLayoutContent {
+  background: rgb(11,115,117);
+  background: linear-gradient(180deg, rgba(11,115,117,1) 0%, rgba(51,141,111,1) 100%);
+  margin: 5rem auto 5rem auto;
+  box-shadow: 0 19px 36px rgb(18 91 138 / 40%);
+  border-radius: .25rem;
+  max-width: 52rem;
+  min-width: 40rem;
+  min-height: 28rem;
+  max-height: 37.5rem;
+
+  @media (max-width: $breakpoint) {
+    max-width: 25rem;
+    min-width: 13rem;
+    max-height: unset;
+  }
+}
+
+.page-layout {
+  @include pageLayout;
+
+  &.page-layout__content{
+    @include pageLayoutContent;
+  }
+}

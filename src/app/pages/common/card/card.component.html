@@ -1,0 +1,23 @@
+<div class="card-container" [ngStyle]="{'background-image': 'url(' + singleNews.storyImageURL + ')'}">
+  <div class="head-content">
+    <span class="chip primary">
+      Score: {{singleNews.storyScore}}
+    </span>
+    <span class="chip primary">
+      {{singleNews.storyTimestamp}}
+    </span>
+  </div>
+  <div class="info-content">
+    <div class="info-title">
+      {{singleNews.storyTitle}}
+    </div>
+    <div class="info-author">
+      <div class="info-identifier">by</div>
+      <div class="chip secondary">{{singleNews.authorId}}</div>
+      <div class="chip karma">Karma Score: {{singleNews.authorKarmaScore}}</div>
+    </div>
+    <div class="info-others">
+      <div class="info-more" (click)="openNewsDetails(singleNews)"> Read More </div>
+    </div>
+  </div>
+</div>

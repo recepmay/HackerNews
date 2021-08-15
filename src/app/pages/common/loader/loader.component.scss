@@ -1,0 +1,10 @@
+@import './src/app/styles/variables.scss';
+
+.news-container__tabbar {
+  background-color: $tabBarColor;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
