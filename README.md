@@ -1,10 +1,15 @@
 # Hacker News Project
 
-Tech stack includes Angular 12 and TypeScript 4 and this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+Tech stack includes
+
+* Angular CLI 12.2.0
+* TypeScript 4.3.5
+* Node.js v14.17.3
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Running the application
 
-Node version v14.17.3 is used in development environment. \
 Run `ng serve --host 0.0.0.0 --port 8080` to start the application. \
 Navigate to `http://localhost:8080/`
 
@@ -37,3 +42,11 @@ A loading indicator is added to inform users with slow connections while fetchin
 * Add color palette to change UI colors and make it dynamic
 * Add more font families and make it optional to change
 * Add gradient color for story score to emphasize ascending order
+
+## Screenshots
+
+* Desktop
+![image](https://github.com/user-attachments/assets/c1468428-c77d-48e0-87a9-6199eac923de)
+
+* Mobile
+![image](https://github.com/user-attachments/assets/89f785f1-a970-4eab-a574-bd0444ac2b86)
