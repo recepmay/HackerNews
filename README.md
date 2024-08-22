@@ -1,12 +1,10 @@
 # Hacker News Project
 
-Tech stack includes
+Tech stack
 
-* Angular CLI 12.2.0
+* [Angular CLI](https://github.com/angular/angular-cli) 12.2.0 
 * TypeScript 4.3.5
 * Node.js v14.17.3
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Running the application
 
@@ -37,6 +35,7 @@ A loading indicator is added to inform users with slow connections while fetchin
 
 ## Improvement Points
 
+* Change the scroll bar to match the application styles
 * Handle Internationalization and support many languages
 * Adjust the CSS class names according to naming convention
 * Add color palette to change UI colors and make it dynamic
