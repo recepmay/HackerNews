@@ -25,7 +25,7 @@ Story item: https://hacker-news.firebaseio.com/v0/item/${id}.json \
 User: https://hacker-news.firebaseio.com/v0/user/${id}.json \
 API documentation: https://github.com/HackerNews/API
 
-10 random Hacker News story IDs are selected from the API on each refresh. Cards are composed after a few consecutive calls to the other APIs. Story cards are sorted in an ascending order starting from left to right by their score. In order not to use static image for the card background, additional Pixabay API is called. The first word of each story title is being passed as a search parameter. Most of the times the first word is something meaningful and API returns a relevant image to use. In other cases, a cute dog photo is being set as a default image.
+10 random Hacker News story IDs are selected from the API on each refresh. Cards are composed after a few consecutive calls to the other APIs. Story cards are sorted in an ascending order starting from left to right by their score. In order not to use static image for the card background, additional Pixabay API is called. The first word of each story title is being passed as a search parameter. Most of the times the first word is something meaningful and API returns a relevant image to use. In other cases, a cute photo of a puppy is being set as a default image.
 
 Story title, story score, timestamp, author name, author karma score is visible on each card. Read more button redirects user to the details page where the image is positioned on left and story details are expanded on right. If API returns information about the author, that is also represented here. The URL to the actual article is provided at the bottom of this page. Back button redirects user to the main page where the cards are listed.
 
