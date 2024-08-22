@@ -46,9 +46,11 @@ A loading indicator is added to inform users with slow connections while fetchin
 
 * Desktop
 ![image](https://github.com/user-attachments/assets/a76be861-076f-4c8a-bbf8-b65cc17bd5dc)
+![image](https://github.com/user-attachments/assets/0e9df88c-8b57-4c70-9968-78c81d0dd6a3)
 
 * Mobile
 ![image](https://github.com/user-attachments/assets/b090375c-728b-4de5-a4e2-fdb46fed1d69)
+![image](https://github.com/user-attachments/assets/5c55a8ea-d486-4427-9140-768a40fbaa20)
 
 
 
