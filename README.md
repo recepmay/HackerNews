@@ -36,6 +36,7 @@ A loading indicator is added to inform users with slow connections while fetchin
 ## Improvement Points
 
 * Change the scroll bar to match the application styles
+* Make changes to make the application follow WCAG standards for accessibility
 * Handle Internationalization and support many languages
 * Adjust the CSS class names according to naming convention
 * Add color palette to change UI colors and make it dynamic
