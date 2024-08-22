@@ -1,6 +1,6 @@
 # Hacker News Project
 
-Tech stack
+## Tech stack
 
 * [Angular CLI](https://github.com/angular/angular-cli) 12.2.0 
 * TypeScript 4.3.5
