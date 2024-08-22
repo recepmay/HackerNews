@@ -43,14 +43,13 @@ A loading indicator is added to inform users with slow connections while fetchin
 * Add more font families and make it optional to change
 * Add gradient color for story score to emphasize ascending order
 
-## Screenshots
+## Screenshots 
 
 * Desktop
 ![image](https://github.com/user-attachments/assets/c1468428-c77d-48e0-87a9-6199eac923de)
 
 * Mobile
-![image](https://github.com/user-attachments/assets/89f785f1-a970-4eab-a574-bd0444ac2b86)
+![image](https://github.com/user-attachments/assets/b090375c-728b-4de5-a4e2-fdb46fed1d69)
 
-* Mobile
-![image](https://github.com/user-attachments/assets/89f785f1-a970-4eab-a574-bd0444ac2b86)
+
 
